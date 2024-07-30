@@ -15,3 +15,5 @@ that is not meant for pushing it on github and extras you can add too.
   },
 --> now npm run dev will say do nodemon src/index.js that is it will run index.js (hamne padha tha na how to run a program from node/nodemon)
 this made it easy and nothing else 
+
+6. the format and file str is what and how a professional project should be approached.
