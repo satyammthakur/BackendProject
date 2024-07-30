@@ -1,3 +1,4 @@
+                                ---Lec6---
 1. let's say you want to make a folder public and inside it you want to make another folder say temp.
 which you will use in future and u want to push it on git .
 as both folders are empty git will not push it so a way to do this is to make a ".gitkeep" file in temp
@@ -17,3 +18,13 @@ that is not meant for pushing it on github and extras you can add too.
 this made it easy and nothing else 
 
 6. the format and file str is what and how a professional project should be approached.
+                                    ---Lec7---
+7. database connection is very imp we are doing mongodb.
+8. there are two ways we can connect database .
+one way is to store everything in index.js and second is to make another separate folder for database
+and put everything there and import it in index.js
+
+
+9. DB connection time you can get errors so it's better to use ; try-catch block or promises.
+and async await should be use because maybe your server/db is in other subcontinent.
+10. debugging requries common sense.
