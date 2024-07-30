@@ -1,0 +1,17 @@
+1. let's say you want to make a folder public and inside it you want to make another folder say temp.
+which you will use in future and u want to push it on git .
+as both folders are empty git will not push it so a way to do this is to make a ".gitkeep" file in temp
+.gitkeep won't have anything i.e. that will be empty only but now you can push it on github
+
+2. .gitignore - it will contain files that we don't want to push on github say sensitive information etc.
+there is a gitingore generator in which if you will type node it will give you general files 
+that is not meant for pushing it on github and extras you can add too.
+
+3. environment variables system se uthaye jaate hai jisse ye secure rahe , ye files se nahi uthaye jaate
+
+4. dev dependcies jo build level par contribute na kare file bulk mein
+5."scripts": {
+    "dev": "nodemon src/index.js"  
+  },
+--> now npm run dev will say do nodemon src/index.js that is it will run index.js (hamne padha tha na how to run a program from node/nodemon)
+this made it easy and nothing else 
