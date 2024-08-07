@@ -1,3 +1,6 @@
+when you are about to start the your own project you have to read documentation 
+for the follwoing topics so that u get a great view of the ppackages etc .                      
+                                
                                 ---Lec6---
 1. let's say you want to make a folder public and inside it you want to make another folder say temp.
 which you will use in future and u want to push it on git .
@@ -31,5 +34,17 @@ and async await should be use because maybe your server/db is in other subcontin
 
                                     ---Lec8---
 11. CORS_ORIGIN=*  basically ham origin select karte hai ki kaha se backened access kar sakta hai
-example vercel etc etc .
-12. middelware-
+example vercel etc etc . and * nahi dena chhaiye specify kar dena chhaiye normally
+12. cookie parser iska kaam bas itna hi hai ki mai apne server se user ka broswer ki cookies 
+set and access kar paaun , basically crud operations on cookies of user's browser
+
+Client hits a url , next process is to handle the req and give response , now we send response 
+in form of json in between we chekc if we are capable of handling the req that is known as middelware
+13. Middelware - we can use multiple middelwares , there is a sequence of using multiple middelwares
+
+14. StatusCode (best practices) -
+informational responses (100-199)
+successful responses (200-299)
+redirection messages (300-399)
+client error responses (400-499)
+server errror responses(500-599)

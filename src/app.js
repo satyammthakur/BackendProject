@@ -4,6 +4,8 @@ import cookieParser from "cookie-parser";
 
 const app= express();
 
+
+//app.use normally middelwares ke liye likhte hai 
 app.use(cors({
     origin: process.env.CORS_ORIGIN,
     credentials: true
@@ -11,7 +13,10 @@ app.use(cors({
 
 app.use(express.json({limit: "16kb"}))  // form ko achhe se read karne ke liye i.e form se data aaye uske liye
 app.use(express.urlencoded({extended:true, limit:"16kb"})) // url ko achhe se read karne ke liye i.e url se data aaye uske liye
-app.use(express.static("public"))  //jaisa hamare paas public hai waisa normal
+//extended allowed hota hai toh nested objects de sakte hai , object==url
+app.use(express.static("public"))  //jaisa hamare paas public hai waisa normal also public
+//and kuch bhi daal sakte hai not necessarily public
+app.use(cookieParser())
 
 
 export {app}
