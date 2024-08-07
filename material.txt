@@ -28,3 +28,8 @@ and put everything there and import it in index.js
 9. DB connection time you can get errors so it's better to use ; try-catch block or promises.
 and async await should be use because maybe your server/db is in other subcontinent.
 10. debugging requries common sense.
+
+                                    ---Lec8---
+11. CORS_ORIGIN=*  basically ham origin select karte hai ki kaha se backened access kar sakta hai
+example vercel etc etc .
+12. middelware-

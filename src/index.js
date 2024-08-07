@@ -5,8 +5,21 @@ import connectDB from "./db/index.js";
 dotenv.config({
     path: './env'
 })
-
+//as we wrote async code then after complition we will get some promises that;s why we used then 
 connectDB()
+.then(()=>{
+    // kayi baar app.listen se phele ham error se ke liye bhi try karte hai .
+    app.on("error" , (error)=>{
+        console.log("ERRR:" , error);
+        throw error;
+    })
+    app.listen(process.env.PORT || 8000, ()=>{
+        console.log(`server is running at port ${process.env.PORT}`);
+    })
+})
+.catch((err)=>{
+    console.log("MONGOD DB connection failed" , err);
+})
 
 
 
